@@ -1,5 +1,3 @@
-console.log("Javvascipt script running")
-
 
 
 const weatherForm = document.querySelector('form')
