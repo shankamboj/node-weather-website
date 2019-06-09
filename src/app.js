@@ -3,11 +3,10 @@ const express= require('express')
 const hbs=require('hbs')
 const geocode = require('./utils/geocode.js')
 const forecast = require ('./utils/forecast.js')
-const port = process.env.PORT || 3000 //gets port value from website when run on heroke online website and if it fails because of running it on local server it gets port 3000
-console.log(port)
+// console.log(port)
 
 const app = express()
-
+const port = process.env.PORT || 300
 //Define paths for express config
 const publicDirectoryPath = path.join(__dirname,'../public')
 const viewsPath = path.join(__dirname,'../templates/views')
