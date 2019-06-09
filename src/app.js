@@ -3,6 +3,7 @@ const express= require('express')
 const hbs=require('hbs')
 const geocode = require('./utils/geocode.js')
 const forecast = require ('./utils/forecast.js')
+const port = process.envy.PORT || 3000 //gets port value from website when run on heroke online website and if it fails because of running it on local server it gets  port 3000
 
 
 const app = express()
