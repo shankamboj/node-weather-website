@@ -34,6 +34,15 @@ header a {
     margin-right: 16px;
     text-decoration: none;
 }
+body{
+    background-image: url("https://bloximages.chicago2.vip.townnews.com/tucson.com/content/tncms/assets/v3/editorial/a/0d/a0dc05b2-f649-5a81-a541-d6f556cbf05d/5b1afa633c3dc.image.jpg?resize=1200%2C692");
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .portrait{
         width:250px;
