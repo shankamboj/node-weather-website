@@ -35,8 +35,7 @@ const forecast=(latitude,longitude,callback) =>
         
     }
     else {
-
-        callback(undefined ,"It is "+body.daily.data[0].summary+"It is "+ body.currently.temperature+" degrees outside .High today is "+body.daily.data[0].temperatureHigh+" with a low of " + body.daily.data[0].temperatureLow+" .The probability of rain is "+body.currently.precipProbability+"%" )
+        callback(undefined ,"It is "+body.daily.data[0].summary+"It is "+ body.currently.temperature+" degrees outside.The probability of rain is "+body.currently.precipProbability+"%" )
     }
 })
 
