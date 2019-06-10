@@ -6,7 +6,7 @@ const forecast = require ('./utils/forecast.js')
 // console.log(port)
 
 const app = express()
-const port = process.env.PORT || 300
+const port = process.env.PORT || 3000
 //Define paths for express config
 const publicDirectoryPath = path.join(__dirname,'../public')
 const viewsPath = path.join(__dirname,'../templates/views')
@@ -29,14 +29,14 @@ app.get('',(req,res)=>{
     })
 })      
 
-app.get('./about',(req,res)=>{
+app.get('/about',(req,res)=>{
     res.render('about',{
         title: "About Me",
         name: "Shan"
     })
 })
 
-app.get('./help',(req,res)=>{
+app.get('/help',(req,res)=>{
     res.render('help',{
         info : "Contact me for more info",
         title : "Help",
@@ -49,7 +49,7 @@ app.get('./help',(req,res)=>{
 
 
 
-app.get('./weather',(req,res)=>{
+app.get('/weather',(req,res)=>{
     if(!req.query.adress){
         res.send({
             error: "Please provide an adress"
