@@ -21,7 +21,7 @@ hbs.registerPartials(partialPath)
 
 
 //setup static directory to serve(from html files)
-app.use(express.static(publicDirectoryPath))//page comes from the static directory
+app.use(express.static(publicDirectoryPath))//page comes from the static directo  ry
 
 app.get('',(req,res)=>{
     res.render('index',{
